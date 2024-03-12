@@ -1,0 +1,7 @@
+<app-post-form (submitted)="addPost($event)"></app-post-form>
+
+<h1>My Thoughts</h1>
+
+@for(p of Allposts; track $index) {
+<app-social-post [displayPost]="p"></app-social-post>
+}
